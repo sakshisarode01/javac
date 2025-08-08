@@ -1,21 +1,22 @@
-package abc;
+package constructor;
 
 public class Demo {
-	  Demo() {
-	        System.out.println("I am in Non-Parameterized contructor");
-	    }
+	Demo() {
+        System.out.println("I am in Non-Parameterized contructor");
+    }
 
-	    Demo(int a, String b) {
-	        System.out.println("I am in Parameterized contructor--:" + a + "," + b);
-	    }
+    Demo(int a, String b) {
+        System.out.println("I am in Parameterized contructor:-" + a + "," + b);
+    }
 
-	    void display() {
-	    }
+    void display() {
 
-	    public static void main(String[] args) {
-	        Demo d1 = new Demo();
-	        Demo d2 = new Demo(30, "SMBST");
-	        d1.display();
-	        d2.display();
-	}
+    }
+
+    public static void main(String[] args) {
+        Demo d1 = new Demo();
+        Demo d2 = new Demo(30, "SMBST");
+        d1.display();
+        d2.display();
+}
 }
